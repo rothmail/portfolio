@@ -19,7 +19,6 @@ header {
 }
 
 header #home-link {
-    transform: rotate(-90deg);
     transform-origin: top left;
     display: flex;
     margin-top: 50px;

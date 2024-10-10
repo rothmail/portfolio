@@ -15,11 +15,21 @@ header {
     background-color: #D8C3A5;
     padding: 20px;
     text-align: center;
+    position: static;
+    width: 100%;
+}
+
+header #home-link {
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    display: flex;
+    margin-top: 50px;
+    position: sticky;
+    color: #5C4033;
 }
 
 header h1 {
     font-size: 2.5em;
-    margin: 0;
     color: #5C4033;
 }
 
@@ -33,7 +43,6 @@ nav a {
     color: #8E6E53;
     font-weight: bold;
     margin: 0 10px;
-    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -49,6 +58,23 @@ main {
     text-align: center;
 }
 
+section h1, p {
+    position: static;
+}
+
+section #eu-amandita {
+    border-radius: 10px;
+    border-color: #5C4033;
+    border-style: double;
+    width: 15%;
+    position: absolute;
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+
+
 section a {
     display: inline-block;
     margin: 15px;
@@ -57,7 +83,6 @@ section a {
     color: #5C4033;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
     color: var(--charcoal);
     text-align: left;
     text-transform: uppercase;
@@ -66,7 +91,6 @@ section a {
     font-weight: 300;
     line-height: .95em;
     text-decoration: none;
-    transition: transform .3s ease-in-out, color .3s ease-in-out,font-size .3s ease-in-out;
     display: block;
     position: relative;
 }

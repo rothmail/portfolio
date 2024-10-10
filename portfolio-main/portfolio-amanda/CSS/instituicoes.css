@@ -15,11 +15,21 @@ header {
     background-color: #D8C3A5;
     padding: 20px;
     text-align: center;
+    position: static;
+    width: 100%;
+}
+
+header #home-link {
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    display: flex;
+    margin-top: 50px;
+    position: sticky;
+    color: #5C4033;
 }
 
 header h1 {
     font-size: 2.5em;
-    margin: 0;
     color: #5C4033;
 }
 
@@ -78,10 +88,15 @@ section a:hover {
     font-style: italic;
 }
 
-section div img {
+main section div img {
     width: 33.3%;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-style: double;
+}
+
+main section div img,
+p {
+    display: inline-block;
 }
 
 footer {

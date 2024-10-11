@@ -19,11 +19,15 @@ header {
     width: 100%;
 }
 
-header #home-link {
+header .home-link {
     transform-origin: top left;
+    color: #5C4033;
+}
+
+header .back-link {
+    transform-origin: top right;
     display: flex;
-    margin-top: 50px;
-    position: sticky;
+    margin-top: 5px;
     color: #5C4033;
 }
 
@@ -42,6 +46,7 @@ nav a {
     color: #8E6E53;
     font-weight: bold;
     margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -52,31 +57,15 @@ nav a img {
     width: 1%;
 }
 
+.icon {
+    width: 1%;
+
+}
+
 main {
     padding: 50px 0;
     text-align: center;
 }
-section h1 {
-    position: static;
-}
-
-section p {
-    position: static;
-    display: flex;
-    text-align: center;
-}
-
-section #eu-amandita {
-    border-radius: 10px;
-    border-color: #5C4033;
-    border-style: double;
-    width: 15%;
-    position: absolute;
-    display: flex;
-    margin-left: 5%;
-}
-
-
 
 section a {
     display: inline-block;
@@ -86,6 +75,7 @@ section a {
     color: #5C4033;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
     color: var(--charcoal);
     text-align: left;
     text-transform: uppercase;
@@ -94,8 +84,20 @@ section a {
     font-weight: 300;
     line-height: .95em;
     text-decoration: none;
+    transition: transform .3s ease-in-out, color .3s ease-in-out,font-size .3s ease-in-out;
     display: block;
     position: relative;
+}
+
+article img {
+    width: 70%;
+    border-radius: 5px;
+    border-style: double;
+}
+
+a h1 {
+    font-size: 25px;
+    text-align: center;
 }
 
 section a:hover {

@@ -23,6 +23,7 @@ header #home-link {
     transform-origin: top left;
     display: flex;
     margin-top: 50px;
+    margin-left: 20px;
     position: sticky;
     color: #5C4033;
 }
@@ -60,12 +61,6 @@ section h1 {
     position: static;
 }
 
-section p {
-    position: static;
-    display: flex;
-    text-align: center;
-}
-
 section #eu-amandita {
     border-radius: 10px;
     border-color: #5C4033;
@@ -75,8 +70,6 @@ section #eu-amandita {
     display: flex;
     margin-left: 5%;
 }
-
-
 
 section a {
     display: inline-block;

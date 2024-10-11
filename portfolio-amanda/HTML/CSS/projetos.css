@@ -20,13 +20,11 @@ header {
 }
 
 header .home-link {
-    transform-origin: top left;
+    display: flex;
     color: #5C4033;
 }
 
 header .back-link {
-    transform-origin: top right;
-    display: flex;
     margin-top: 5px;
     color: #5C4033;
 }
